@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="../css/estilo3.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="shortcut icon" href="../img/icono.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        
+        <div class="ventana"> </div>
+        
+        <nav>
+                
+        </nav> 
+
+        <div class="row justify-content-center">
+            <div class="col-md-2 mb-2">
+                <a href="../index.html" class="btn btn-info btn-block">Inicio</a>
+            </div>
+
+            <div class="col-md-2 mb-2">
+                <a href="catalogos.html" class="btn btn-info btn-block">Catálogos</a>
+            </div>
+
+            <div class="col-md-2 mb-2">
+                <a href="contacto.html" class="btn btn-info btn-block">Contáctanos</a>
+            </div>
+        </div>
+        
+            
+        <section class="textos-header">
+            <h1>Necesitas Alguno de Nuestros Productos</h1>
+            <h2>Contactános Por Cualquiera de Nuestras Sociales y de manera personalizada nos comunicaremos contigo
+                VARIEDADES MARTHA CRUZ.
+            </h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h1 class="titulo">NUESTRAS REDES SOCIALES</h1>
+            <div class="contenedor-sobre-nosotros">
+                <div class="hol">
+
+                </div>
+                <div class="espacio"> </div>
+
+                <div class="slider">
+                    <div id="img">
+                        <img id="imgSlider" src="../img/img24.PNG">
+                    </div>
+
+                </div>
+
+                <div class="contenido-textos">
+                    <img src="../img/facebook1.svg" height="90px" width="60px" alt="">
+                    <h1>Facebook</h1>
+                    <div class="row justify-content-between">
+                        <div class="col-md-20 ml-2">
+                            <a href="https://www.facebook.com/marthagladys.cruzgodoy"
+                            class="btn btn-info btn-block" target="_blank">Martha Gladys Cruz</a>
+                        </div>
+                    </div>
+                    <h3>  </h3>
+                    </br>
+                    <h3>  </h3>
+                    </br>
+
+                    <img src="../img/gmail.svg" height="90px" width="60px" alt="">
+                    <h1>Correo Electrónico</h1>
+                    <h3>variedades.martha.cruz@gmail.com</h3>
+                    <h3>  </h3>
+                    </br>
+                    <h3>  </h3>
+                    </br>
+
+                    <img src="../img/whatsapp1.svg " height="90px" width="60px" alt="">
+                    <h1>Whatsap</h1>
+                    <h2>0984758887</h2>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <img src="../img/whatsapp.svg " height="50px" width="50px" alt="">
+                <h4>Whatsap</h4>
+                <p>0984758887</p>
+            </div>
+
+            <div class="content-foo">
+                <img src="../img/facebook.svg" height="40px" width="40px" alt="">
+                <h4>Facebook</h4>
+                <div class="row justify-content-center">
+                    <div class="col-md-20 ml-2">
+                        <a href="https://www.facebook.com/marthagladys.cruzgodoy"
+                        class="btn btn-info btn-block" target="_blank">Martha Gladys Cruz</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-foo">
+                <img src="../img/email.svg" height="50px" width="50px" alt="">
+                <h4>Correo Electrónico</h4>
+                <p>variedades.martha.cruz@gmail.com</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; VARIEDADES MARTHA CRUZ | Martha Gladys Cruz</h2>
+    </footer>
+
+
+    <script>
+        var img = document.getElementById('img');
+
+        var imagenes = ['../img/img16.PNG','../img/img25.PNG','../img/img12.PNG','../img/img26.PNG'];
+
+        var x = 0;
+
+        function slide() {
+            if (x < imagenes.length) {
+                x = x + 1;
+            } else {
+                x = 1;
+            }
+
+            img.innerHTML = "<img src=" + imagenes[x - 1] + ">";
+
+        }
+
+        setInterval(slide, 4000);
+    </script>
+
+
+
+
+</body>
+
+</html>
